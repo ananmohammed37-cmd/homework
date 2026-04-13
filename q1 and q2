@@ -1,0 +1,26 @@
+#q1
+def indian_to_arabic(text):
+    indian = '٠١٢٣٤٥٦٧٨٩'
+    result = ''
+    for char in text:
+        if char in indian:
+            result += str(indian.index(char))
+        else:
+            result += char
+    return result
+
+text = input("Enter: ")
+print(indian_to_arabic(text))
+#q2 
+import random, math
+
+def std_dev(numbers):
+    n = len(numbers)
+    mean = sum(numbers) / n
+    variance = sum((x - mean) ** 2 for x in numbers) / n
+    return math.sqrt(variance)
+
+n = int(input("Enter N= "))
+numbers = [random.randint(1, 10) for _ in range(n)]
+print("Numbers:", numbers)
+print("Standard Deviation:", round(std_dev(numbers), 3))
