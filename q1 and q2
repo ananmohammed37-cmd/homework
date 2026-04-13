@@ -11,6 +11,13 @@ def indian_to_arabic(text):
 
 text = input("Enter: ")
 print(indian_to_arabic(text))
+
+
+
+
+
+
+
 #q2 
 import random, math
 
